@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const router = express.Router();
-const mysqlConnection = require("../db/accessData");
+const mysqlConnection = require("../DataBase/accessData");
 
 router.get('/productos/listar', (req, res) => {
     mysqlConnection.query("Select * from products order by 2", (err, rows, fields) => {
