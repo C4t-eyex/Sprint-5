@@ -1,6 +1,6 @@
 globalThis.registros = [];
 
-function  login() {
+function login() {
 if(correo.length == 0) {
     alert('Error - Campo Correo vacío');
     return false;
