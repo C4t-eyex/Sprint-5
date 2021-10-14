@@ -9,7 +9,6 @@ function login() {
 var correo = document.getElementById('correo').value;
 var contrasena = document.getElementById('contrasena').value;
 
-
 if(correo.length == 0) {
     alert('Error - Campo Correo vacío');
     document.getElementById("correo").value = "";
@@ -34,7 +33,7 @@ if (!/[a-z]/.test(contrasena) || !/[A-Z]/.test(contrasena) || !/[0-9]/.test(cont
     contrasena.focus();
     return false;
 }
-if (validarCAPTCHA == false){
+if (validarCAPTCHA(arreglo) == false){
     alert('No se pudo iniciar sesión');
     return false;
 }
@@ -64,14 +63,16 @@ function agregarRegistro() {
 };
 
 function validarCAPTCHA(arreglo) {
+var captcha = document.getElementById('captcha').value;
 var arreglo = 1000;
 if(captcha.length == arreglo){
     alert('CAPTCHA válido');
     return true;
 }
-alert('CAPTCHA no válido');
-return false;
-
+else {
+    alert('CAPTCHA no válido');
+    return false;
+}
 }
 
 //module.exports.login = login;
