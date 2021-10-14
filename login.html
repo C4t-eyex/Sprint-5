@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Resources\CSS\estilo.css">
+    <script src="JS\login.js"></script>
+    <title>Inicio Sesion</title>
+</head>
+<body>
+    <header>
+        <ul id="row">
+            <li><a href="index.html" id="enlace-navigation">Inicio</a></li>
+            <li><a href="registro.html" id="enlace-navigation">Registrarse</a></li>
+            <li><a href="login.html" id="enlace-navigation">Iniciar Sesión</a></li>
+            <li style="float:right"><a class="active" href="https://github.com/Fuze7-11/Sprint-5" id="enlace-navigation">Github</a></li>
+        </ul>
+    </header>
+   <div id="container2">
+        <div id="container-img">
+           <img style="background-color: aliceblue; margin-bottom: 5%; margin-left: 35%; margin-top: 5%;" src="Resources\IMG\usuario.png" alt="Usuario" width="50%" height="80%">
+        </div>
+        <div id="containe-form">
+            <form style="margin-left: 150%; margin-top: 80%;" id="form-registro" >
+                <h1 id="registro">Iniciar Sesión</h1>
+                <label for="campo">Correo</label>
+                <input id="correo" name="correo" type="text">
+                <label for="campo">Contraseña</label>
+                <input id="contrasena" name="contrasena" type="password">
+                <label for="campo">Captcha</label>
+                <input id="captcha" name="captcha" type="text">
+                 <!-- Propiedad que hace llenar obligatoriamente un campo = required="true" 
+                      Propiedad que hace llenar con numero solamente = pattern="[0-9]+" -->
+                <br>
+                <input type="submit" id="btn-submit-form" value="Iniciar">
+            </form>
+        </div>
+   </div> 
+   <footer id="footer">
+    <h3 style="color: aliceblue;">Proyecto final - Grupo 5</h3>
+</footer>
+</body>
+</html>

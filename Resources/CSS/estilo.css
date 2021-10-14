@@ -127,6 +127,16 @@ li a {
     background-color: #ffe1f3;
 }
 
+#form-login {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #form-registro {
     width: 100%;
     max-width: 600px;
